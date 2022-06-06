@@ -54,7 +54,7 @@ export const QuestionItemMemo: FC<Questions> = ({ questionArray }) => {
               <button
                 className={`${
                   !next ? 'opacity-0' : null
-                } my-36 cursor-pointer rounded bg-cyan-500 px-2 py-1 text-2xl text-white shadow-cyan-500/50`}
+                } mt-20 cursor-pointer rounded bg-cyan-500 px-2 py-1 text-2xl text-white shadow-lg shadow-cyan-500/50`}
                 onClick={NextButton}
                 disabled={!next}
               >
@@ -62,7 +62,7 @@ export const QuestionItemMemo: FC<Questions> = ({ questionArray }) => {
                 <ChevronDoubleRightIcon className="inline h-6 w-6" />
               </button>
 
-              <div className="flesx-wrap mt-24 flex justify-around">
+              <div className="mt-40 mb-9 flex flex-wrap ">
                 <button
                   className={`${
                     next
@@ -70,7 +70,7 @@ export const QuestionItemMemo: FC<Questions> = ({ questionArray }) => {
                         ? ' !bg-lime-500 !shadow-lime-500/50'
                         : 'bg-red-500 shadow-red-500/50'
                       : 'bg-cyan-500 shadow-cyan-500/50'
-                  } mt-5 cursor-pointer rounded px-2 py-1 text-2xl text-white shadow-lg`}
+                  } mt-5 ml-5 cursor-pointer rounded px-2 py-1 text-2xl text-white shadow-lg`}
                   onClick={(e) => onClick(e)}
                   value={answers[0]}
                   disabled={next}
