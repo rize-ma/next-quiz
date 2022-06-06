@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         Lime: "#A3E635",
         Cyan: "#22D3EE",
+        Red: "#F87171",
       },
       backgroundImage: theme => ({
         'quiz-img': "url('/Images/quiz.jpg')",
@@ -18,4 +19,5 @@ module.exports = {
     },
   },
   plugins: [],
+  important: true,
 }
