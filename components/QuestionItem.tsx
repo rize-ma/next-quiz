@@ -8,7 +8,7 @@ type Questions = {
   questionArray: Question[] | undefined
 }
 
-export const QuestionItemMemo: FC<Questions> = ({ questionArray }) => {
+export const QuestionItem: FC<Questions> = ({ questionArray }) => {
   const [question, setQuestion] = useState<Question[]>([])
   const [quizCount, setQuizCount] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
@@ -127,5 +127,3 @@ export const QuestionItemMemo: FC<Questions> = ({ questionArray }) => {
     </>
   )
 }
-
-export const QuestionItem = memo(QuestionItemMemo)
